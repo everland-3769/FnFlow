@@ -16,7 +16,7 @@
 ## 💻 Requirements
 
 - macOS 14.0 (Sonoma) or later
-- Apple Silicon (M1/M2/M3/M4) or Intel Mac
+- Apple Silicon (M1/M2/M3/M4/M5) or Intel Mac
 
 ## 📦 Installation
 
@@ -29,6 +29,18 @@
 > ```bash
 > xattr -cr /Applications/FnFlow.app
 > ```
+
+## 🤖 AI & Human Collaboration
+
+**FnFlow** was crafted through an iterative co-development workflow between the project author and AI programming assistants:
+
+- **[everland-3769](https://github.com/everland-3769)**: Project Lead & Architecture, Hardware Testing & Debugging, UI Integration, Release Engineering.
+- **Google Gemini**:
+  - **UI/UX & Native Polish**: Designed the modern macOS Sonoma/Sequoia **Liquid Glass** drag-and-drop control, card-style settings layout, and auto-resizing tabbed window system.
+  - **Localization & Bundle Architecture**: Built the native `.xcstrings` String Catalog localization (EN / 繁中 / 簡中), dynamic `Bundle.main` versioning, and automated DMG release packaging.
+- **Anthropic Claude**:
+  - **IOKit & Low-Level HID Diagnostics**: Assisted in low-level `IOHIDSystem` / `HIDFKeyMode` API analysis and hardware parameter verification.
+  - **Process Loop Analysis**: Identified application activation event handling and frontmost process filtering logic.
 
 ## 📄 License
 
