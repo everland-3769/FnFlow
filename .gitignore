@@ -1,0 +1,13 @@
+# macOS System Files
+.DS_Store
+
+# Xcode User Data & Build Outputs
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.bundle/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
