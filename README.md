@@ -1,47 +1,40 @@
-# FnFlow 
+#   FnFlow — Smart Fn Key Mode Switcher for macOS
+> Effortlessly switch between Media Keys and Standard F1–F12 Function Keys on macOS, tailored to your active application.
 
-> A lightweight macOS menu bar utility that automatically toggles F1–F12 keys between Media Keys and Standard Function Keys based on the active application.
+[](README.zh-CN.md)
+---
 
-![macOS 14.0+](https://img.shields.io/badge/macOS-14.0%2B-blue)
-![Swift 5.9](https://img.shields.io/badge/Swift-5.9-orange)
-![License MIT](https://img.shields.io/badge/License-MIT-green)
+English | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md)
 
-## ✨ Features
+I am thrilled to introduce **FnFlow**! This is my very first macOS app project.
 
-- 🔄 **Automatic Switching**: Seamlessly toggles Function Key behavior based on the frontmost app.
-- 🎛️ **App-Specific Rules**: Easily bind custom behavior to individual apps or follow global preferences.
-- 🎨 **Modern macOS Menu Bar UI**: Sleek Liquid Glass design with quick mode controls directly in the menu bar.
-- 🚀 **Launch at Login**: Native ServiceManagement background startup support.
+The inspiration for this app came from **Fluor**, a handy tool that I personally loved and used for years. Unfortunately, Fluor's original development ended around 2021. Although a community version 2.5.1 was released in 2022 for Apple Silicon compatibility, its user interface felt aging and its feature set wasn't quite keeping up with modern macOS standards. While Fluor remained rock-solid in stability, I couldn't find a simple, modern, and powerful alternative online.
 
-## 💻 Requirements
+So, I decided to build a brand-new Fn key switcher from scratch specifically for modern macOS—complete with a modern SwiftUI design and thoughtful features. I hope FnFlow helps anyone who shares the same workflow needs!
 
-- macOS 14.0 (Sonoma) or later
-- Apple Silicon (M1/M2/M3/M4/M5) or Intel Mac
+---
 
-## 📦 Installation
+## ✨ Key Features
+
+- 🔄 **Automatic F1–F12 Mode Switching**: Seamlessly switches keyboard modes between Media Keys and Standard Function Keys based on your frontmost application.
+- 💧 **Modern Liquid Glass UI**: High-quality SwiftUI menu bar interface featuring responsive, high-contrast liquid glass sliders.
+- 🎯 **Custom Per-App Rules**: Easily set dedicated rules for individual applications, complete with rule search and active app selection.
+- 🔔 **Customizable OSD Notifications**: Get instant feedback when switching apps with floating screen OSD capsules, menu bar indicators, system banners, or audio cues (can also be turned off completely).
+- ☁️ **iCloud Sync & JSON Backup**: Automatically sync your custom app rules across your Macs via iCloud, or export/import JSON configuration backups anytime.
+- ⚡ **Global Hotkey**: Press `Option + F` anywhere to toggle the global function key mode instantly.
+- 🎨 **Tailored Menu Bar Styles**: Choose between Standard Icon (Sun / Fn), Minimal Dot, or Text-Only mode. Dynamic color adaptation automatically matches your macOS system accent color.
+- 🚀 **Launch at Login**: Background startup support upon macOS login.
+
+---
+
+## 🛠️ Installation
 
 1. Download the latest `FnFlow.dmg` from the [Releases](../../releases) section.
-2. Drag `FnFlow.app` into your `Applications` folder.
-3. Launch `FnFlow` from your Applications folder.
+2. Open the DMG file and drag `FnFlow.app` into your `/Applications` folder.
+3. If macOS Gatekeeper prevents opening the app, open Terminal and run:
+   ```bash
+   xattr -cr /Applications/FnFlow.app
+   ```
 
-> **Note for Non-Code-Signed Builds**:
-> If macOS Gatekeeper blocks opening the app, run the following command in Terminal:
-> ```bash
-> xattr -cr /Applications/FnFlow.app
-> ```
-
-## 🤖 AI & Human Collaboration
-
-**FnFlow** was crafted through an iterative co-development workflow between the project author and AI programming assistants:
-
-- **[everland-3769](https://github.com/everland-3769)**: Project Lead & Architecture, Hardware Testing & Debugging, UI Integration, Release Engineering.
-- **Google Gemini**:
-  - **UI/UX & Native Polish**: Designed the modern macOS Sonoma/Sequoia **Liquid Glass** drag-and-drop control, card-style settings layout, and auto-resizing tabbed window system.
-  - **Localization & Bundle Architecture**: Built the native `.xcstrings` String Catalog localization (EN / 繁中 / 簡中), dynamic `Bundle.main` versioning, and automated DMG release packaging.
-- **Anthropic Claude**:
-  - **IOKit & Low-Level HID Diagnostics**: Assisted in low-level `IOHIDSystem` / `HIDFKeyMode` API analysis and hardware parameter verification.
-  - **Process Loop Analysis**: Identified application activation event handling and frontmost process filtering logic.
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+## 📣 Feedback & Support
+FnFlow will be continuously updated and maintained. I hope you enjoy using it! If you encounter any bugs or have ideas for new features, please feel free to open an issue in the issues section.
