@@ -1,6 +1,6 @@
 import SwiftUI
 
-// MARK: - Liquid Glass Segmented Control
+// MARK: - 高對比液態玻璃切換滑桿 (High Contrast Liquid Glass Control)
 struct LiquidGlassControl<T: Hashable>: View {
     @Binding var selection: T
     let options: [(tag: T, icon: String, label: LocalizedStringKey?)]
@@ -19,21 +19,24 @@ struct LiquidGlassControl<T: Hashable>: View {
             let baseOffset = CGFloat(activeStartIndex) * itemWidth
             
             ZStack(alignment: .leading) {
-                // Background track
-                RoundedRectangle(cornerRadius: 8, style: .continuous)
-                    .fill(colorScheme == .dark ? AnyShapeStyle(.ultraThinMaterial) : AnyShapeStyle(Color(NSColor.controlBackgroundColor).opacity(0.6)))
+                // 1. 底層軌道 ( Track )
+                Capsule(style: .continuous)
+                    .fill(
+                        colorScheme == .dark
+                            ? AnyShapeStyle(Color.black.opacity(0.45))
+                            : AnyShapeStyle(Color.black.opacity(0.08))
+                    )
                     .overlay(
-                        RoundedRectangle(cornerRadius: 8, style: .continuous)
+                        Capsule(style: .continuous)
                             .stroke(
                                 colorScheme == .dark
-                                    ? Color.white.opacity(0.2)
-                                    : Color.black.opacity(0.12),
+                                    ? Color.white.opacity(0.12)
+                                    : Color.black.opacity(0.08),
                                 lineWidth: 1
                             )
                     )
-                    .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.2 : 0.05), radius: 2, x: 0, y: 1)
                 
-                // Active selection indicator
+                // 2. 浮動高對比玻璃切換塊 ( Selected Thumb )
                 let indicatorX: CGFloat = {
                     if dragStartIndex != nil {
                         let target = baseOffset + dragTranslation
@@ -43,44 +46,47 @@ struct LiquidGlassControl<T: Hashable>: View {
                     }
                 }()
                 
-                RoundedRectangle(cornerRadius: 6, style: .continuous)
+                Capsule(style: .continuous)
                     .fill(
                         colorScheme == .dark
                             ? AnyShapeStyle(
                                 LinearGradient(
-                                    colors: [Color.white.opacity(0.35), Color.white.opacity(0.18)],
+                                    colors: [Color.white.opacity(0.32), Color.white.opacity(0.18)],
                                     startPoint: .topLeading,
                                     endPoint: .bottomTrailing
                                 )
                               )
                             : AnyShapeStyle(
                                 LinearGradient(
-                                    colors: [Color(NSColor.controlBackgroundColor), Color(NSColor.controlBackgroundColor).opacity(0.9)],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
+                                    colors: [Color.white, Color(NSColor.controlBackgroundColor)],
+                                    startPoint: .top,
+                                    endPoint: .bottom
                                 )
                               )
                     )
                     .overlay(
-                        RoundedRectangle(cornerRadius: 6, style: .continuous)
+                        Capsule(style: .continuous)
                             .stroke(
                                 colorScheme == .dark
-                                    ? Color.white.opacity(0.6)
-                                    : Color.black.opacity(0.18),
+                                    ? Color.white.opacity(0.55)
+                                    : Color.black.opacity(0.15),
                                 lineWidth: 1
                             )
                     )
                     .shadow(
-                        color: Color.black.opacity(colorScheme == .dark ? 0.25 : 0.15),
-                        radius: colorScheme == .dark ? 3 : 2,
+                        color: Color.black.opacity(colorScheme == .dark ? 0.4 : 0.12),
+                        radius: 3,
                         x: 0,
                         y: 1
                     )
                     .frame(width: itemWidth - 4, height: geometry.size.height - 4)
                     .offset(x: indicatorX + 2)
-                    .animation(dragStartIndex != nil ? nil : .spring(response: 0.25, dampingFraction: 0.75), value: selection)
+                    .animation(
+                        dragStartIndex != nil ? nil : .spring(response: 0.26, dampingFraction: 0.75),
+                        value: selection
+                    )
                 
-                // Interactive segment options
+                // 3. 切換項目圖示與文字標籤 ( 高對比階層劃分 )
                 HStack(spacing: 0) {
                     ForEach(0..<options.count, id: \.self) { index in
                         let option = options[index]
@@ -88,27 +94,37 @@ struct LiquidGlassControl<T: Hashable>: View {
                         
                         HStack(spacing: 4) {
                             Image(systemName: option.icon)
-                                .font(.system(size: 11, weight: isSelected ? .bold : .medium))
-                                .foregroundColor(isSelected ? Color.accentColor : Color.secondary)
-                                .scaleEffect(isSelected ? 1.15 : 1.0)
+                                .font(.system(size: 11.5, weight: isSelected ? .bold : .medium))
+                                // 選中項目為 100% 顯色；未選中項目降至 35% 低對比透明度
+                                .foregroundColor(
+                                    isSelected
+                                        ? Color.primary
+                                        : Color.primary.opacity(0.35)
+                                )
+                                .scaleEffect(isSelected ? 1.12 : 0.95)
+                                .animation(.spring(response: 0.25, dampingFraction: 0.7), value: isSelected)
                             
                             if let label = option.label {
                                 Text(label)
                                     .font(.system(size: 11, weight: isSelected ? .bold : .regular))
-                                    .foregroundColor(isSelected ? Color.primary : Color.secondary)
+                                    .foregroundColor(
+                                        isSelected
+                                            ? Color.primary
+                                            : Color.primary.opacity(0.35)
+                                    )
                             }
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .contentShape(Rectangle())
                         .onTapGesture {
-                            withAnimation(.spring(response: 0.25, dampingFraction: 0.75)) {
+                            withAnimation(.spring(response: 0.26, dampingFraction: 0.75)) {
                                 selection = option.tag
                             }
                         }
                     }
                 }
             }
-            // Drag gesture handler
+            // 4. 吸附手勢處理
             .gesture(
                 DragGesture(minimumDistance: 1)
                     .onChanged { value in
@@ -126,13 +142,13 @@ struct LiquidGlassControl<T: Hashable>: View {
                         }
                     }
                     .onEnded { _ in
-                        withAnimation(.spring(response: 0.25, dampingFraction: 0.75)) {
+                        withAnimation(.spring(response: 0.26, dampingFraction: 0.75)) {
                             dragTranslation = 0
                             dragStartIndex = nil
                         }
                     }
             )
         }
-        .frame(height: 24)
+        .frame(height: 26)
     }
 }

@@ -2,7 +2,20 @@
   "sourceLanguage" : "en",
   "strings" : {
     "" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        }
+      }
     },
     "About" : {
       "localizations" : {
@@ -20,34 +33,50 @@
         }
       }
     },
-    "About FnFlow" : {
+    "Accessibility Permission" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "关于 FnFlow"
+            "state" : "machine_translated",
+            "value" : "辅助功能权限"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "關於 FnFlow"
+            "value" : "輔助使用權限"
           }
         }
       }
     },
-    "Add Application..." : {
+    "Accessibility Permission Needed" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "添加应用程序..."
+            "state" : "machine_translated",
+            "value" : "需要辅助功能权限"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "新增應用程式..."
+            "value" : "需要輔助使用權限"
+          }
+        }
+      }
+    },
+    "Active" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "已启用"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啟用"
           }
         }
       }
@@ -63,7 +92,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "所有應用程式將跟隨全域預設行為運作。"
+            "value" : "所有應用程式皆會遵循全域預設行為運作"
           }
         }
       }
@@ -79,23 +108,39 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "App 規則管理"
+            "value" : "規則管理"
           }
         }
       }
     },
-    "Application Rules" : {
+    "Appearance" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "已独立自定义行为的应用"
+            "state" : "machine_translated",
+            "value" : "外观"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "已獨立自訂行為的應用程式"
+            "value" : "外觀"
+          }
+        }
+      }
+    },
+    "Application" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用程序"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "應用程式"
           }
         }
       }
@@ -116,6 +161,134 @@
         }
       }
     },
+    "Automatically start in menu bar when macOS boots" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "macOS 启动时自动在菜单栏启动"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 macOS 啟動時自動在選單列中啟動"
+          }
+        }
+      }
+    },
+    "Back" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "返回"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "返回"
+          }
+        }
+      }
+    },
+    "Backup & Sync" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "备份与同步"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "備份與同步"
+          }
+        }
+      }
+    },
+    "Bottom of Screen" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "屏幕下方"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "螢幕下方"
+          }
+        }
+      }
+    },
+    "Browse..." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "浏览…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "瀏覽"
+          }
+        }
+      }
+    },
+    "Choose where the HUD appears on screen" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "选择提示 HUD 在屏幕上的显示位置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇提示 HUD 將會出現在螢幕上的哪個位置"
+          }
+        }
+      }
+    },
+    "Configuration Backup" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "配置备份"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定備份"
+          }
+        }
+      }
+    },
+    "Continue" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "继续"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "繼續"
+          }
+        }
+      }
+    },
     "Copyright © 2026 FnFlow. All rights reserved." : {
       "localizations" : {
         "zh-Hans" : {
@@ -128,6 +301,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copyright © 2026 FnFlow. 保留一切權利。"
+          }
+        }
+      }
+    },
+    "Customize icon appearance in status bar" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "自定义菜单栏图标外观"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自訂選單列中的圖示外觀"
           }
         }
       }
@@ -148,6 +337,22 @@
         }
       }
     },
+    "Default mode when no app rules apply" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "未应用任何应用规则时使用的默认模式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "當尚未設定自訂規則時將會套用的預設模式"
+          }
+        }
+      }
+    },
     "Disable FnFlow" : {
       "localizations" : {
         "zh-Hans" : {
@@ -159,7 +364,103 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "停用 FnFlow"
+            "value" : "暫時停用"
+          }
+        }
+      }
+    },
+    "Disabled" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "关闭"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關閉"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "完成"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完成"
+          }
+        }
+      }
+    },
+    "Enable or disable automatic Fn key switching." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "启用或停用 Fn 键自动切换。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啟用或停用 Fn 鍵的自動切換功能。"
+          }
+        }
+      }
+    },
+    "Export or import rules as JSON file" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "将规则导出或导入为 JSON 文件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將自訂規則匯出或匯入為 JSON 檔案"
+          }
+        }
+      }
+    },
+    "Export..." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "导出…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "匯出"
+          }
+        }
+      }
+    },
+    "F1-F12" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "F1-F12"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F1-F12"
           }
         }
       }
@@ -180,6 +481,38 @@
         }
       }
     },
+    "Feedback when switching to custom app rules" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "切换至自定义应用程序规则时的提示"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切換至自訂應用程式規則時的提示"
+          }
+        }
+      }
+    },
+    "Fn Mode" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Fn 模式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fn 模式"
+          }
+        }
+      }
+    },
     "FnFlow" : {
       "localizations" : {
         "zh-Hans" : {
@@ -192,6 +525,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "FnFlow"
+          }
+        }
+      }
+    },
+    "FnFlow automatically switches your F1–F12 keys between Media Keys and Standard Function Keys based on your active app." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "FnFlow 会根据当前活跃的应用，在媒体键和标准功能键之间自动切换 F1–F12 键。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FnFlow 會根據您木前正在使用的應用程式，自動在「媒體控制鍵」與「Fn 功能鍵」之間切換 F1–F12 鍵的功能。"
           }
         }
       }
@@ -223,23 +572,23 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "全域偏好"
+            "value" : "一般"
           }
         }
       }
     },
-    "General Settings" : {
+    "Get Started" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "系统启动与默认行为"
+            "state" : "machine_translated",
+            "value" : "开始使用"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "系統啟動與預設行為"
+            "value" : "開始使用"
           }
         }
       }
@@ -260,18 +609,130 @@
         }
       }
     },
-    "Global Default Mode:" : {
+    "Global Default Behavior" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "全局默认模式："
+            "state" : "machine_translated",
+            "value" : "全局默认行为"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "全域預設模式："
+            "value" : "全域預設行為"
+          }
+        }
+      }
+    },
+    "Global Toggle Shortcut" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "全局切换快捷键"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全域切換快捷鍵"
+          }
+        }
+      }
+    },
+    "Grant Accessibility Permission" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "授予辅助功能权限"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "授予輔助使用權限"
+          }
+        }
+      }
+    },
+    "Grant Permission" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "授予权限"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "授予權限"
+          }
+        }
+      }
+    },
+    "Grant permission to enable automatic app switching." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "授予权限以启用自动应用切换。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在系統設定中授予輔助使用權限來啟用應用程式自動切換功能。"
+          }
+        }
+      }
+    },
+    "iCloud Rules Sync" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "iCloud 规则同步"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同步至 iCloud"
+          }
+        }
+      }
+    },
+    "Import..." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "导入…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "匯入"
+          }
+        }
+      }
+    },
+    "Initial Configuration" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "初始配置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "初始設定"
           }
         }
       }
@@ -287,7 +748,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "開機自動啟動"
+            "value" : "登入時自動啟動"
           }
         }
       }
@@ -303,7 +764,39 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "開機自動啟動 FnFlow"
+            "value" : "登入時自動啟動"
+          }
+        }
+      }
+    },
+    "macOS requires Accessibility permission to detect key events and frontmost application switches." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "macOS 需要“辅助功能”权限来检测按键事件和最前端应用程序切换。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOS 需要「輔助功能」權限，才能偵測鍵盤事件及切換最上方的應用程式。"
+          }
+        }
+      }
+    },
+    "Media" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "媒体键"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "媒體鍵"
           }
         }
       }
@@ -319,23 +812,103 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "多媒體鍵"
+            "value" : "媒體控制鍵"
           }
         }
       }
     },
-    "Media Keys (Volume/Brightness)" : {
+    "Menu Bar Icon Style" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "媒体键 (音量/亮度)"
+            "state" : "machine_translated",
+            "value" : "菜单栏图标样式"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "多媒體鍵 (音量/亮度)"
+            "value" : "選單列圖示風格"
+          }
+        }
+      }
+    },
+    "Menu Bar Indicator" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "菜单栏指示器"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選單列指示器"
+          }
+        }
+      }
+    },
+    "Menu Bar Style" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "菜单栏样式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選單列外觀"
+          }
+        }
+      }
+    },
+    "Minimal Dot Icon" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "极简圆点图标"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "極簡圓點"
+          }
+        }
+      }
+    },
+    "Mode & Status" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "模式与状态"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "模式與狀態"
+          }
+        }
+      }
+    },
+    "Mode used when no app rules apply" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "无应用规则时使用的模式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "當沒有自訂規則時所套用的模式"
           }
         }
       }
@@ -351,7 +924,87 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "目前沒有已解耦的應用程式"
+            "value" : "目前沒有已自訂規則的應用程式"
+          }
+        }
+      }
+    },
+    "No Matching Rules Found" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "未找到匹配的规则"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未找到相符的自訂規則"
+          }
+        }
+      }
+    },
+    "Notification & Feedback" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "提示与反馈"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提示與反饋"
+          }
+        }
+      }
+    },
+    "Notification Style" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "提示方式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提示方式"
+          }
+        }
+      }
+    },
+    "Off" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "关闭"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關閉"
+          }
+        }
+      }
+    },
+    "OSD Position" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "OSD 显示位置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OSD 顯示位置"
           }
         }
       }
@@ -367,7 +1020,55 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "暫停 F1-F12 功能鍵自動切換"
+            "value" : "暫時停用 Fn 功能鍵與媒體控制鍵的自動切換功能"
+          }
+        }
+      }
+    },
+    "Permission Granted" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "已授予权限"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已成功授予權限"
+          }
+        }
+      }
+    },
+    "Play system sound effect when mode switches" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "切换模式时播放系统提示音"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在模式切換時播放系統提示音效"
+          }
+        }
+      }
+    },
+    "Press Option + F anywhere to switch modes" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "在任何位置按 Option + F 可切换模式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在任何位置按下 Option + F 即可切換模式"
           }
         }
       }
@@ -404,6 +1105,182 @@
         }
       }
     },
+    "Rules automatically sync across your Mac devices" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "规则会自动在你的各台 Mac 设备间同步"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已新增的自訂規則會自動在您的 Mac 裝置之間同步"
+          }
+        }
+      }
+    },
+    "Running Apps..." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "正在运行的应用程序…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "執行中的應用程式"
+          }
+        }
+      }
+    },
+    "Screen OSD HUD" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "屏幕 OSD"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "螢幕 OSD"
+          }
+        }
+      }
+    },
+    "Search rules..." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "搜索规则…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜尋自訂規則"
+          }
+        }
+      }
+    },
+    "Search running apps..." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "搜索正在运行的应用程序…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜尋執行中的應用程式"
+          }
+        }
+      }
+    },
+    "Select Running Application" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "选择正在运行的应用程序"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇執行中的應用程式"
+          }
+        }
+      }
+    },
+    "Send notification banners via macOS Notification Center" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "通过 macOS 通知中心发送通知横幅"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "透過 macOS 通知中心傳送通知橫幅"
+          }
+        }
+      }
+    },
+    "Set FnFlow keyboard mode to Media or Standard F1-F12." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "将 FnFlow 键盘模式设为媒体键或标准 F1-F12 键。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將 FnFlow 鍵盤模式設定為「媒體控制鍵」或「標準 F1-F12 鍵」。"
+          }
+        }
+      }
+    },
+    "Set FnFlow Mode" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "设置 FnFlow 模式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定 FnFlow 模式"
+          }
+        }
+      }
+    },
+    "Set FnFlow mode to ${mode}" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "将 FnFlow 模式设为 ${mode}"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將 FnFlow 模式設定為 ${mode}"
+          }
+        }
+      }
+    },
+    "Set Keyboard Mode" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "设置键盘模式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定鍵盤模式"
+          }
+        }
+      }
+    },
     "Settings..." : {
       "localizations" : {
         "zh-Hans" : {
@@ -415,7 +1292,39 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "偏好設定..."
+            "value" : "設定"
+          }
+        }
+      }
+    },
+    "Show floating OSD HUD capsule on screen" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "在屏幕上显示浮动的 OSD HUD 胶囊"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在螢幕上彈出提示膠囊來顯示目前應用程式的模式"
+          }
+        }
+      }
+    },
+    "Sound Effect Only" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "仅播放提示音"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "僅播放提示音"
           }
         }
       }
@@ -431,7 +1340,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "標準 F1 ~ F12 功能鍵"
+            "value" : "Fn 功能鍵"
           }
         }
       }
@@ -447,7 +1356,168 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "標準 F1~F12"
+            "value" : "Fn 功能鍵"
+          }
+        }
+      }
+    },
+    "Standard F1-F12 Keys" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "标准 F1-F12 功能键"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fn 功能鍵"
+          }
+        }
+      }
+    },
+    "Standard Icon (Sun / Fn)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "标准图标（太阳 / Fn）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圖示"
+          }
+        }
+      }
+    },
+    "Switched to %@" : {
+      "comment" : "Notification body when switching Fn mode",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已切换至 %@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已切換至 %@"
+          }
+        }
+      }
+    },
+    "System & Control" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "系统与控制"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系統與控制"
+          }
+        }
+      }
+    },
+    "System Banner" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "系统通知"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系統通知"
+          }
+        }
+      }
+    },
+    "Target Mode" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "目标模式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目標模式"
+          }
+        }
+      }
+    },
+    "Temporarily display animation and text in menu bar" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "在菜单栏中暂时显示动画和文本"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在選單列中以圖示來顯示切換動畫和提示狀態(可能會擠佔選單列的空間)"
+          }
+        }
+      }
+    },
+    "Text Label Only" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "仅显示文本标签"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "僅顯示文字標籤"
+          }
+        }
+      }
+    },
+    "Toggle FnFlow Auto Switch" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "切换 FnFlow 自动切换"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切換 FnFlow 自動切換功能"
+          }
+        }
+      }
+    },
+    "Top of Screen" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "屏幕上方"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "螢幕上方"
           }
         }
       }
@@ -469,7 +1539,23 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "版本 %1$@ (%2$@)"
+            "value" : "版本 %1$@ 組建版本%2$@"
+          }
+        }
+      }
+    },
+    "Welcome to FnFlow" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "欢迎使用 FnFlow"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歡迎使用 FnFlow"
           }
         }
       }
